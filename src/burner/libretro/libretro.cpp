@@ -43,9 +43,15 @@ static std::vector<std::string> g_find_list_path;
 static ROMFIND g_find_list[1024];
 static unsigned g_rom_count;
 
-#define AUDIO_SAMPLERATE 32000
+#if !defined(SF2000)
+#define AUDIO_SAMPLERATE 44100
 #define AUDIO_SEGMENT_LENGTH 534 // <-- Hardcoded value that corresponds well to 32kHz audio.
 #define VIDEO_REFRESH_RATE 59.629403f
+#else
+#define AUDIO_SAMPLERATE 11025
+#define AUDIO_SEGMENT_LENGTH 184 // <-- Hardcoded value that corresponds well to 32kHz audio.
+#define VIDEO_REFRESH_RATE 60
+#endif
 
 static uint16_t *g_fba_frame      = NULL;
 static uint16_t *g_fba_rotate_buf = NULL;
@@ -839,7 +845,11 @@ void retro_get_system_av_info(struct retro_system_av_info *info)
 #endif
 
    info->timing.fps               = VIDEO_REFRESH_RATE;
+#if !defined(SF2000)
    info->timing.sample_rate       = VIDEO_REFRESH_RATE * AUDIO_SEGMENT_LENGTH;
+#else
+   info->timing.sample_rate       = AUDIO_SAMPLERATE;
+#endif
 }
 
 static bool fba_init(unsigned driver, const char *game_zip_name)
