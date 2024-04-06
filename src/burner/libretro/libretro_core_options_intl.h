@@ -652,6 +652,211 @@ struct retro_core_options_v2 options_be = {
    option_defs_be
 };
 
+/* RETRO_LANGUAGE_BG */
+
+#define FBA2012CPS2_CPU_SPEED_ADJUST_LABEL_BG NULL
+#define FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_BG NULL
+#define FBA2012CPS2_HISCORES_LABEL_BG NULL
+#define FBA2012CPS2_HISCORES_INFO_0_BG NULL
+#define FBA2012CPS2_CONTROLS_LABEL_BG NULL
+#define FBA2012CPS2_CONTROLS_INFO_0_BG NULL
+#define OPTION_VAL_GAMEPAD_BG NULL
+#define OPTION_VAL_ARCADE_BG NULL
+#define FBA2012CPS2_ASPECT_LABEL_BG NULL
+#define FBA2012CPS2_ASPECT_INFO_0_BG NULL
+#define OPTION_VAL_DAR_BG NULL
+#define OPTION_VAL_PAR_BG NULL
+#define FBA2012CPS2_AUTO_ROTATE_LABEL_BG NULL
+#define FBA2012CPS2_AUTO_ROTATE_INFO_0_BG NULL
+#define FBA2012CPS2_LOWPASS_FILTER_LABEL_BG NULL
+#define FBA2012CPS2_LOWPASS_FILTER_INFO_0_BG NULL
+#define FBA2012CPS2_LOWPASS_RANGE_LABEL_BG NULL
+#define FBA2012CPS2_LOWPASS_RANGE_INFO_0_BG NULL
+#define FBA2012CPS2_FRAMESKIP_LABEL_BG NULL
+#define FBA2012CPS2_FRAMESKIP_INFO_0_BG NULL
+#define OPTION_VAL_AUTO_BG NULL
+#define OPTION_VAL_MANUAL_BG NULL
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_BG NULL
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_BG NULL
+
+struct retro_core_option_v2_category option_cats_bg[] = {
+   { NULL, NULL, NULL },
+};
+struct retro_core_option_v2_definition option_defs_bg[] = {
+   {
+      "fba2012cps2_cpu_speed_adjust",
+      FBA2012CPS2_CPU_SPEED_ADJUST_LABEL_BG,
+      NULL,
+      FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "100", NULL },
+         { "110", NULL },
+         { "120", NULL },
+         { "130", NULL },
+         { "140", NULL },
+         { "150", NULL },
+         { "160", NULL },
+         { "170", NULL },
+         { "180", NULL },
+         { "190", NULL },
+         { "200", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "fba2012cps2_hiscores",
+      FBA2012CPS2_HISCORES_LABEL_BG,
+      NULL,
+      FBA2012CPS2_HISCORES_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "fba2012cps2_controls",
+      FBA2012CPS2_CONTROLS_LABEL_BG,
+      NULL,
+      FBA2012CPS2_CONTROLS_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "gamepad", OPTION_VAL_GAMEPAD_BG },
+         { "arcade",  OPTION_VAL_ARCADE_BG },
+         { NULL, NULL },
+      },
+      "gamepad"
+   },
+   {
+      "fba2012cps2_aspect",
+      FBA2012CPS2_ASPECT_LABEL_BG,
+      NULL,
+      FBA2012CPS2_ASPECT_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "DAR", OPTION_VAL_DAR_BG },
+         { "PAR", OPTION_VAL_PAR_BG },
+         { NULL, NULL },
+      },
+      "DAR"
+   },
+   {
+      "fba2012cps2_auto_rotate",
+      FBA2012CPS2_AUTO_ROTATE_LABEL_BG,
+      NULL,
+      FBA2012CPS2_AUTO_ROTATE_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL },
+      },
+      "enabled"
+   },
+   {
+      "fba2012cps2_lowpass_filter",
+      FBA2012CPS2_LOWPASS_FILTER_LABEL_BG,
+      NULL,
+      FBA2012CPS2_LOWPASS_FILTER_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "fba2012cps2_lowpass_range",
+      FBA2012CPS2_LOWPASS_RANGE_LABEL_BG,
+      NULL,
+      FBA2012CPS2_LOWPASS_RANGE_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "5",  NULL },
+         { "10", NULL },
+         { "15", NULL },
+         { "20", NULL },
+         { "25", NULL },
+         { "30", NULL },
+         { "35", NULL },
+         { "40", NULL },
+         { "45", NULL },
+         { "50", NULL },
+         { "55", NULL },
+         { "60", NULL },
+         { "65", NULL },
+         { "70", NULL },
+         { "75", NULL },
+         { "80", NULL },
+         { "85", NULL },
+         { "90", NULL },
+         { "95", NULL },
+         { NULL, NULL },
+      },
+      "60"
+   },
+   {
+      "fba2012cps2_frameskip",
+      FBA2012CPS2_FRAMESKIP_LABEL_BG,
+      NULL,
+      FBA2012CPS2_FRAMESKIP_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "disabled", NULL },
+         { "auto",     OPTION_VAL_AUTO_BG },
+         { "manual",   OPTION_VAL_MANUAL_BG },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "fba2012cps2_frameskip_threshold",
+      FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_BG,
+      NULL,
+      FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_BG,
+      NULL,
+      NULL,
+      {
+         { "15", NULL },
+         { "18", NULL },
+         { "21", NULL },
+         { "24", NULL },
+         { "27", NULL },
+         { "30", NULL },
+         { "33", NULL },
+         { "36", NULL },
+         { "39", NULL },
+         { "42", NULL },
+         { "45", NULL },
+         { "48", NULL },
+         { "51", NULL },
+         { "54", NULL },
+         { "57", NULL },
+         { "60", NULL },
+         { NULL, NULL },
+      },
+      "33"
+   },
+   { NULL, NULL, NULL, NULL, NULL, NULL, {{0}}, NULL },
+};
+struct retro_core_options_v2 options_bg = {
+   option_cats_bg,
+   option_defs_bg
+};
+
 /* RETRO_LANGUAGE_CA */
 
 #define FBA2012CPS2_CPU_SPEED_ADJUST_LABEL_CA NULL
@@ -4755,29 +4960,29 @@ struct retro_core_options_v2 options_it = {
 /* RETRO_LANGUAGE_JA */
 
 #define FBA2012CPS2_CPU_SPEED_ADJUST_LABEL_JA "CPU速度 (%)"
-#define FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_JA "エミュレートされたCPUのオーバークロックを有効にします. 速度低下を減らせますが, 不具合を引き起こす可能性があります."
+#define FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_JA "エミュレートされた CPU のオーバークロックを有効にします。実行速度の低下を減らすことができますが、不具合を引き起こす可能性があります。"
 #define FBA2012CPS2_HISCORES_LABEL_JA "ハイスコア"
 #define FBA2012CPS2_HISCORES_INFO_0_JA "対応ゲームでハイスコアの保存を有効にします。「hiscore.dat」 ファイルを「system/fbalpha2012/・ フォルダに配置する必要があります。"
 #define FBA2012CPS2_CONTROLS_LABEL_JA "コントロール"
-#define FBA2012CPS2_CONTROLS_INFO_0_JA "デフォルトのコントローラマッピングを設定します."
+#define FBA2012CPS2_CONTROLS_INFO_0_JA "デフォルトのコントローラーマッピングを設定します。"
 #define OPTION_VAL_GAMEPAD_JA "ゲームパッド"
 #define OPTION_VAL_ARCADE_JA "アーケード"
 #define FBA2012CPS2_ASPECT_LABEL_JA "コア提供アスペクト比"
-#define FBA2012CPS2_ASPECT_INFO_0_JA "推奨コンテンツのアスペクト比を選択します。これは、ビデオ設定でRetroArchのアスペクト比が「コアが指定されている」に設定されている場合にのみ適用されます。"
+#define FBA2012CPS2_ASPECT_INFO_0_JA "コンテンツの優先アスペクト比を選択します。ビデオ設定で RetroArch のアスペクト比が [コア提供] に設定されている場合にのみ適用されます。"
 #define OPTION_VAL_DAR_JA NULL
 #define OPTION_VAL_PAR_JA NULL
 #define FBA2012CPS2_AUTO_ROTATE_LABEL_JA "垂直方向に整列したゲームを回転させる (再起動が必要)"
-#define FBA2012CPS2_AUTO_ROTATE_INFO_0_JA "画面を垂直に整列させたゲームを実行するときに自動的に回転させます。無効にすると、画面上の方向に合わせてD-Pad入力が回転します。"
-#define FBA2012CPS2_LOWPASS_FILTER_LABEL_JA "オーディオフィルタ"
+#define FBA2012CPS2_AUTO_ROTATE_INFO_0_JA "縦向きのゲームを実行するときに画面を自動的に回転させます。無効にすると、画面上の方向に合わせて十字キー入力が回転します。"
+#define FBA2012CPS2_LOWPASS_FILTER_LABEL_JA "オーディオフィルター"
 #define FBA2012CPS2_LOWPASS_FILTER_INFO_0_JA "ローパスオーディオフィルターを有効にして、いくつかのアーケードゲームの「硬い音」を柔らかくします。"
 #define FBA2012CPS2_LOWPASS_RANGE_LABEL_JA "オーディオフィルターレベル (%)"
 #define FBA2012CPS2_LOWPASS_RANGE_INFO_0_JA "ローパスオーディオフィルターのカットオフ周波数を指定します。 値を大きくすると、高周波数スペクトルの広い範囲が減衰するため、フィルタの知覚された「強さ」が増加します。"
 #define FBA2012CPS2_FRAMESKIP_LABEL_JA "フレームスキップ"
-#define FBA2012CPS2_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。 「自動」は、フロントエンドにアドバイスされたときにフレームをスキップします。「マニュアル」は、「フレームスキップ閾値 (%)」設定を使用します。"
+#define FBA2012CPS2_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。[自動] はフロントエンドによって指示された場合にフレームをスキップします。[手動] は [フレームスキップしきい値 (%)] 設定を使用します。"
 #define OPTION_VAL_AUTO_JA "自動"
 #define OPTION_VAL_MANUAL_JA "手動"
-#define FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップ閾値 (%)"
-#define FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_JA "'フレームスキップ' が '手動' に設定されている場合, フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します. 値を大きくすると, フレームを頻繁に落とすことでクラッキングが発生するリスクが低下します."
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップしきい値 (%)"
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_JA "[フレームスキップ] が [手動] に設定されている場合、フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します。値を高くするほど、より頻繁にフレームを落とすことで音割れが発生するリスクを軽減します。"
 
 struct retro_core_option_v2_category option_cats_ja[] = {
    { NULL, NULL, NULL },
@@ -5985,29 +6190,29 @@ struct retro_core_options_v2 options_pl = {
 /* RETRO_LANGUAGE_PT_BR */
 
 #define FBA2012CPS2_CPU_SPEED_ADJUST_LABEL_PT_BR "Velocidade da CPU (%)"
-#define FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_PT_BR "Habilita o overclock da CPU emulada. Pode reduzir a lentidão, mas pode causar falhas."
-#define FBA2012CPS2_HISCORES_LABEL_PT_BR "Recordes"
-#define FBA2012CPS2_HISCORES_INFO_0_PT_BR "Salva os recordes com as melhores pontuações nos jogos que suportam esta função. É necessário ter o arquivo \"hiscore.dat\" na pasta system/fbalpha2012/."
+#define FBA2012CPS2_CPU_SPEED_ADJUST_INFO_0_PT_BR "Aumenta a velocidade (overclock) da CPU emulada. Pode reduzir a lentidão, mas pode causar falhas."
+#define FBA2012CPS2_HISCORES_LABEL_PT_BR "Pontuações"
+#define FBA2012CPS2_HISCORES_INFO_0_PT_BR "Salva as melhores pontuações em jogos compatíveis.\nOBSERVAÇÃO: requer arquivo \"hiscore.dat\" na pasta \"system/fbalpha2012/\"."
 #define FBA2012CPS2_CONTROLS_LABEL_PT_BR "Controles"
-#define FBA2012CPS2_CONTROLS_INFO_0_PT_BR "Define o mapeamento padrão do controle."
+#define FBA2012CPS2_CONTROLS_INFO_0_PT_BR "Define o mapeamento padrão dos controles."
 #define OPTION_VAL_GAMEPAD_PT_BR NULL
-#define OPTION_VAL_ARCADE_PT_BR NULL
-#define FBA2012CPS2_ASPECT_LABEL_PT_BR "Proporção de tela fornecida pelo núcleo"
-#define FBA2012CPS2_ASPECT_INFO_0_PT_BR "Seleciona a proporção da tela preferida do conteúdo. Isso se aplicará somente quando a proporção da tela do RetroArch estiver configurada como 'Fornecida pelo núcleo' nas configurações de vídeo."
-#define OPTION_VAL_DAR_PT_BR "DAR (Relação de aspecto da tela)"
-#define OPTION_VAL_PAR_PT_BR "PAR (Relação de aspecto do pixel)"
-#define FBA2012CPS2_AUTO_ROTATE_LABEL_PT_BR "Girar jogos alinhados verticalmente (requer reinício)"
-#define FBA2012CPS2_AUTO_ROTATE_INFO_0_PT_BR "Gira automaticamente a imagem ao executar jogos com um alinhamento vertical. Quando esta opção for desativada, a entrada do direcional digital irá girar para combinar com as direções exibidas na tela."
+#define OPTION_VAL_ARCADE_PT_BR "Fliperama"
+#define FBA2012CPS2_ASPECT_LABEL_PT_BR "Proporção de tela do núcleo"
+#define FBA2012CPS2_ASPECT_INFO_0_PT_BR "Define a proporção de tela prioritária do conteúdo.\nOBSERVAÇÃO: requer \"Fornecida pelo núcleo\" ativada nas configurações de vídeo."
+#define OPTION_VAL_DAR_PT_BR "Proporção de tela (DAR)"
+#define OPTION_VAL_PAR_PT_BR "Proporção de píxel (PAR)"
+#define FBA2012CPS2_AUTO_ROTATE_LABEL_PT_BR "Rotacionar jogos verticais (requer reinício)"
+#define FBA2012CPS2_AUTO_ROTATE_INFO_0_PT_BR "Gira a tela automaticamente ao executar jogos com alinhamento vertical. Ao ser desativada, a entrada do direcional digital (D-Pad) será girada para combinar com as direções exibidas na tela."
 #define FBA2012CPS2_LOWPASS_FILTER_LABEL_PT_BR "Filtro de áudio"
-#define FBA2012CPS2_LOWPASS_FILTER_INFO_0_PT_BR "Aplica um filtro passa-baixo ao áudio para suavizar a estridência do som de certos jogos arcade."
+#define FBA2012CPS2_LOWPASS_FILTER_INFO_0_PT_BR "Ativa um filtro de áudio passa-baixo para suavizar a estridência do som de alguns jogos de fliperama."
 #define FBA2012CPS2_LOWPASS_RANGE_LABEL_PT_BR "Nível do filtro de áudio (%)"
-#define FBA2012CPS2_LOWPASS_RANGE_INFO_0_PT_BR "Especifica o corte de frequência no filtro de áudio passa-baixo. Um alto valor aumentará a força percebida do filtro, pois mais do espectro de alta frequência será atenuado."
+#define FBA2012CPS2_LOWPASS_RANGE_INFO_0_PT_BR "Especifica a frequência de corte do filtro de áudio passa-baixo. Um valor mais alto aumenta a \"força\" percebida do filtro, uma vez que uma faixa mais ampla do espectro de alta frequência é atenuada."
 #define FBA2012CPS2_FRAMESKIP_LABEL_PT_BR "Pulo de quadro"
-#define FBA2012CPS2_FRAMESKIP_INFO_0_PT_BR "Ignora quadros para evitar o esvaziamento do buffer do áudio (cortes no áudio). Melhora o desempenho ao custo da suavidade visual. A opção 'Automático' ignora os quadros quando for aconselhado pela interface. Já 'Manual' utiliza a configuração 'Limite do salto de quadros (%)'."
+#define FBA2012CPS2_FRAMESKIP_INFO_0_PT_BR "Ignora quadros para evitar o esvaziamento da memória intermédia (buffer) do áudio (corte no áudio). Melhora o desempenho ao custo da suavidade visual. A opção \"Automático\" ignora os quadros quando aconselhado pela interface. \"Manual\" usa a configuração \"Limite do pulo de quadro (%)\"."
 #define OPTION_VAL_AUTO_PT_BR "Automático"
 #define OPTION_VAL_MANUAL_PT_BR NULL
-#define FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_PT_BR "Limite de pulo de quadro (%)"
-#define FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_PT_BR "Quando o 'Pulo de quadro' for definido como 'Manual', especifica o limite de ocupação do buffer de áudio (em porcentagem) abaixo do qual os quadros serão pulados. Valores maiores reduzem o risco de engasgos pois farão que os quadros sejam descartados com mais frequência."
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_LABEL_PT_BR "Limite do pulo de quadro (%)"
+#define FBA2012CPS2_FRAMESKIP_THRESHOLD_INFO_0_PT_BR "Ao configurar \"Pulo de quadro\" como \"Manual\", especifica o limite da memória intermédia (buffer) de áudio em porcentagem, os quadros fora da porcentagem serão ignorados. Valores maiores reduzem o risco de engasgo por descartar quadros com mais frequência."
 
 struct retro_core_option_v2_category option_cats_pt_br[] = {
    { NULL, NULL, NULL },
